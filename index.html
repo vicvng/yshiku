@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>YSHIKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css">
+
+<!-- Lenis smooth scroll -->
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-kanji">影絵廊</div>
+  <div class="hero-corner tl"></div><div class="hero-corner tr"></div>
+  <div class="hero-corner bl"></div><div class="hero-corner br"></div>
+  <div class="hero-accent"></div>
+  <p class="hero-eyebrow">Illustrator</p>
+  <h1 class="hero-title">YSHIKU</h1>
+  <div class="hero-ornament">
+    <span class="line"></span><span class="diamond"></span><span class="line"></span>
+  </div>
+  <p class="hero-tagline">L'encre, le pixel &amp; l'ombre — Portfolio 2023–2024</p>
+ 
+  <div class="hero-scroll"><span>Découvrir</span><div class="arrow"></div></div>
+</section>
+
+<!-- ══ FILTERS ══ -->
+<section class="filters-section">
+  <nav class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="original">Original</button>
+    <button data-filter="fanart">Fanart</button>
+    <button data-filter="chara">Chara-Design</button>
+  </nav>
+</section>
+
+<!-- ══ GALLERY — portraits + paysages mélangés ══
+     Motif sur 4 colonnes :
+     [1col][1col][2col-wide]   → ligne 1
+     [2col-wide][1col][1col]   → ligne 2
+     [1col][2col-wide][1col]   → ligne 3
+     [1col][1col][2col-wide]   → ligne 4
+-->
+<main class="gallery">
+
+  <!-- Ligne 1 : portrait | portrait | wide -->
+  <div class="card-wrap" data-soft="original" style="animation-delay:.05s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-1"></div>
+      <div class="card-info"><div class="card-title">OC 1</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2023</span></div></div>
+    </div></div>
+  </div>
+
+  <div class="card-wrap" data-soft="fanart" style="animation-delay:.10s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-2"></div></div>
+      <div class="card-info"><div class="card-title">Terra Branford</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2024</span></div></div>
+    </div></div>
+  </div>
+
+  <div class="card-wrap wide" data-soft="chara" style="animation-delay:.16s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-7"></div>
+      <div class="card-info"><div class="card-badge">Paysage</div><div class="card-title">WIP</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2023</span></div></div>
+    </div></div>
+  </div>
+
+  <!-- Ligne 2 : wide | portrait | portrait -->
+  <div class="card-wrap wide" data-soft="chara" style="animation-delay:.22s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-8"></div>
+      <div class="card-info"><div class="card-badge">Paysage</div><div class="card-title">WIP</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2024</span></div></div>
+    </div></div>
+  </div>
+
+  <div class="card-wrap" data-soft="fanart" style="animation-delay:.28s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-3"></div>
+      <div class="card-info"><div class="card-title">Y'shtola Rhul</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2025</span></div></div>
+    </div></div>
+  </div>
+
+  <div class="card-wrap" data-soft="original" style="animation-delay:.33s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-4"></div>
+      <div class="card-info"><div class="card-title">OC 2</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2026</span></div></div>
+    </div></div>
+  </div>
+
+  <!-- Ligne 3 : portrait | wide | portrait -->
+  <div class="card-wrap" data-soft="fanart" style="animation-delay:.38s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-5"></div>
+      <div class="card-info"><div class="card-title">Blazing Cartesia</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2025</span></div></div>
+    </div></div>
+  </div>
+
+  <div class="card-wrap wide" data-soft="chara" style="animation-delay:.44s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-9"><div class="spiral"></div></div>
+      <div class="card-info"><div class="card-badge">Paysage</div><div class="card-title">WIP</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2026</span></div></div>
+    </div></div>
+  </div>
+
+  <div class="card-wrap" data-soft="original" style="animation-delay:.50s">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-6"></div>
+      <div class="card-info"><div class="card-title">OC 3</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2026</span></div></div>
+    </div></div>
+  </div>
+
+
+<!-- Wide solo centré
+
+  <div class="card-wrap wide" data-soft="chara" style="animation-delay:.56s; grid-column: 2 / 4;">
+    <div class="card"><div class="card-inner"><div class="card-frame"></div>
+      <div class="card-art art-10"></div>
+      <div class="card-info"><div class="card-badge">Paysage</div><div class="card-title">WIP</div><div class="card-meta"><span class="card-soft">Procreate</span><span class="card-date">2024.04</span></div></div>
+    </div></div>
+  </div>
+
+-->
+
+</main>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact" id="contact">
+  <div class="contact-bg"></div>
+  <div class="contact-kanji">連絡</div>
+  <div class="contact-inner">
+    <p class="contact-label">Prise de contact</p>
+    <h2>Travaillons Ensemble</h2>
+    <p class="contact-subtitle">
+      Commissions, collaborations ou juste un mot —<br>
+      chaque message est accueilli avec soin.
+    </p>
+
+    <div class="contact-btns">
+      <!-- Email -->
+      <a class="contact-btn contact-btn-primary" href="#">
+        <span class="btn-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/>
+          </svg>
+        </span>
+        <span class="__cf_email__" data-cfemail="e9909a8180829ca98c84888085c78a8684">[email&#160;protected]</span>
+      </a>
+
+      <span class="contact-btn-sep">◆</span>
+
+      <!-- Instagram -->
+      <a class="contact-btn contact-btn-secondary" href="https://instagram.com/yshiku" target="_blank" rel="noopener">
+        <span class="btn-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/>
+          </svg>
+        </span>
+        @yshiku
+      </a>
+    </div>
+
+    <div class="contact-social">
+      <a class="social-link" href="#">Twitter / X</a>
+      <span class="social-sep">◆</span>
+      <a class="social-link" href="#">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p class="footer-name">YSHIKU</p>
+  <p>© 2026 — Tous droits réservés</p>
+</footer>
+
+<!-- ══ MODAL ══ -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Détail de l'illustration">
+  <div class="modal">
+    <div class="modal-frame"></div>
+    <div class="modal-art" id="modalArt"></div>
+    <div class="modal-body">
+      <p class="modal-eyebrow" id="modalCat">Original</p>
+      <h2 class="modal-title" id="modalTitle">Titre</h2>
+      <div class="modal-divider"><div class="line"></div><div class="diamond"></div><div class="line"></div></div>
+      <div class="modal-meta">
+        <div class="modal-meta-row">
+          <span class="modal-meta-label">Outil</span>
+          <span class="modal-meta-value" id="modalSoft">—</span>
+        </div>
+        <div class="modal-meta-row">
+          <span class="modal-meta-label">Année</span>
+          <span class="modal-meta-value" id="modalDate">—</span>
+        </div>
+      </div>
+      <div class="modal-badge" id="modalBadge"></div>
+    </div>
+    <button class="modal-close" id="modalClose" aria-label="Fermer">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke-width="1.8" stroke-linecap="round">
+        <line x1="1" y1="1" x2="11" y2="11"/><line x1="11" y1="1" x2="1" y2="11"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
